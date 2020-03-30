@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Menu</title>
+        <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        #nav{
+            background-color: blueviolet;
+        }
+        
+        #menu > li{
+            display: blocks;
+            padding: 20px;
+            
+        }
+        #menu li > a{
+            color: #FFF;
+        }
+        .hvr{
+            position: relative;
+        }
+        .dd{
+             display: none; 
+            position: absolute;
+            background-color: rgb(138, 14, 255);
+            top: 50px;
+            width: 150px;
+        }
+        .dd a{
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .dd a:hover{
+            background-color: rgb(155, 51, 252);
+        }
+        .hvr:hover .dd{
+            display: block; 
+        } 
+       
+        </style>
+    </head>
+    <body>
+        
+        <div id="nav">
+
+            <ul id="menu">
+                <li><a href="#">Ana Səhifə</a></li>
+                <li><a href="#">Haqqında</a></li>
+                <li class="hvr">
+                    <a  href="#">Məqalələr</a>
+                    <ul class="dd">
+                        <li><a href="#">Mobil</a></li>
+                        <li><a href="#">Web</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Console</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Əlaqə</a></li>
+            </ul>
+
+        </div>
+
+    </body>
+</html>
